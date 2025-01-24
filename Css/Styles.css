@@ -27,37 +27,24 @@ nav {
     justify-content: space-between;
     align-items: center;
 }
-/* Estilo del logo */
+
 nav .Logo h1 {
-    font-size: 30px;
-    margin: 5;
+    font-size: 1.8rem;
+    margin: 0;
 }
 
-/* Estilo de los enlaces de navegación */
 nav .list-nav a {
-    font-size: 25px;
+    font-size: 1rem;
     color: #fff; 
     text-decoration: none; 
     margin: 0 10px; 
 }
 
-/* Opcional: Efecto hover */
 nav .list-nav a:hover {
     color: #fbf5f5;
-}
-
-/* Botones */
-.list-nav a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 16px;
-    padding: 10px 15px;
-}
-
-/* Cursor */
-.list-nav a:hover {
     background-color: #3f3f3f;
     border-radius: 5px;
+    padding: 5px;
 }
 
 /* Estilo de las secciones */
@@ -68,292 +55,183 @@ section {
 
 /* Sección Inicio */
 #Inicio {
-    body {
-        background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(248, 248, 248, 0.8), rgba(224, 224, 224, 0.5));
-        /* El primer blanco es opaco, el segundo tiene un 80% de opacidad y el tercero tiene un 50% */
-    }
-    
+    background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(248, 248, 248, 0.8), rgba(224, 224, 224, 0.5));
     text-align: center;
-    padding: 70px 20px;/* NO TAPAR NAV*/
+    padding: 70px 20px;
     margin-top: 100px;
-    height: 100vh;
+    min-height: 90vh;
 }
 
 #Inicio h1.main-title {
-    font-size: 60px; 
-    color: #000000; 
-    transition: color 0.4s ease, transform 0.3s ease; 
+    font-size: 3rem;
+    color: #000000;
+    transition: color 0.4s ease, transform 0.3s ease;
 }
 
 #Inicio h1.main-title:hover {
-    color: #636363; 
-    transform: scale(1.1); 
+    color: #636363;
+    transform: scale(1.1);
 }
 
 #Inicio h2.main-title {
-    font-size: 30px; 
-    color: #000000; 
-    transition: color 0.3s ease, transform 0.3s ease; 
+    font-size: 1.5rem;
+    color: #000000;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 #Inicio .image-container img.p111 {
     height: auto;
+    max-width: 100%;
     border-radius: 8px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-
-.Info-principal h1 {
-    margin: 0;
-    font-size: 30px;
-    color: #333;
-}
-
-.Info-principal p {
-    font-size: 18px;
-    color: #666;
-}
-
-.btn-container-home a {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 16px;
-    color: white;
-    background-color: #148f2a;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-.btn-container-home a:hover {
-    background-color: #e3e7eb;
-}
-
 /* Sección ¿Quién Soy? */
-
 #QuienSoy {
-    background: linear-gradient(to right, #7c7575, #070707); /* Degradado de rojo a naranja */
+    background: linear-gradient(to right, #7c7575, #070707);
     text-align: center;
-     padding: 70px 20px;
+    padding: 70px 20px;
     margin-top: 100px;
-    height: 100vh;
+    min-height: 90vh;
 }
 
 #QuienSoy h1 {
-    font-size: 70px; 
-    color: #000000; 
-    transition: color 0.4s ease, transform 0.3s ease; 
+    font-size: 3.5rem;
+    color: #ffffff;
+    transition: color 0.4s ease, transform 0.3s ease;
 }
 
 #QuienSoy p {
     padding: 20px;
-    font-size: 20px; /* Tamaño grande y destacado */
-    color: #ffffff; /* Color de texto oscuro para buena legibilidad */
-    font-weight: bold; /* Negrita para mayor énfasis */
-    font-family: 'Arial', sans-serif; /* Cambia la tipografía según lo que prefieras */
-    text-align: center; /* Centra el texto */
-    line-height: 1.2; /* Ajusta el espacio entre líneas */
-    text-transform: uppercase; /* Texto en mayúsculas para un impacto visual */
-    letter-spacing: 2px; /* Espaciado entre letras para un diseño más limpio */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra para un efecto visual */
-    margin: 20px 0; /* Espaciado alrededor del texto */
+    font-size: 1.25rem;
+    color: #ffffff;
+    font-weight: bold;
     text-align: justify;
+    line-height: 1.6;
+    margin: 20px 0;
 }
+
+/* Sección PasaTiempo */
 #PasaTiempo {
-    height: 100vh;/* Que tan grande estara */
+    min-height: 90vh;
     padding: 70px 20px;
-    font-size: 40px;
+    font-size: 1.5rem;
     text-align: center;
-    border-radius: 8px;
 }
+
 .PasaTiempo-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(700px, 1fr)); /* Ajusta el tamaño de las columnas */
-    gap: 50px; 
-    margin-top: 0px;
-       
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
 }
 
 .pasaimg {
-    aspect-ratio: 1; 
-    border: 2px solid #e0e0e0; /* Borde sutil */
-    border-radius: 50px; /* Bordes redondeados */
-    background-color: #4b4b4b; 
+    aspect-ratio: 1;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    background-color: #4b4b4b;
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden; 
+    overflow: hidden;
     transition: transform 0.3s, box-shadow 0.3s;
-}
-.pasaimg:hover {
-    transform: translateY(-50px); /* Efecto de elevación al pasar el cursor */
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada al hacer hover */
 }
 
 .pasaimg img {
-    width: 100%; 
-
-    border-radius: 8px;
-    margin-bottom: 10px;
-    object-fit: contain;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
+    border-radius: 8px;
 }
 
-/* C-------------------------------------------------------------------------------------------*/
-.pasaimg {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr)); /* Ajusta el tamaño de las columnas */
-    gap: 50px; 
-    margin-top: 0px;
-}
-
-
-html {
-    scroll-behavior: smooth;
-}
-section {
-    padding-top: 100px; 
-    margin-top: -80px; 
-}
-
-
-hr {
-    border: 0;
-    height: 1px;
-    background: #ddd;
-    margin: 20px 0;
+.pasaimg:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
 /* Sección Habilidades */
 #Habilidades {
-    height: 115vh;/* Que tan grande estara */
+    min-height: 90vh;
     padding: 80px 20px;
-    font-size: 40px;
     text-align: center;
-    border-radius: 8px;
-}
-.habilidades-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr)); /* Ajusta el tamaño de las columnas */
-    gap: 50px; 
-    margin-top: 0px;
-}
-.habilidad:hover {
-    transform: translateY(-70px); /* Eleva el cuadro al pasar el cursor */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
-    background-color: #4c5dcc; 
-   
 }
 
-/* Estilo para cada cuadro de habilidad */
+.habilidades-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
 .habilidad {
-    aspect-ratio: 1; 
-    body {
-        background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(248, 248, 248, 0.8), rgba(224, 224, 224, 0.5));
-        /* El primer blanco es opaco, el segundo tiene un 80% de opacidad y el tercero tiene un 50% */
-    }
+    aspect-ratio: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden; 
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: #ffffff;
+    border-radius: 8px;
+    position: relative;
+    padding: 20px;
 }
-.habilidad h1 {
-    font-size: 40px;
-    margin: 0; 
-    position: absolute;
-    top: 10px; 
-    left: 50%;
-    transform: translateX(-50%); /* Centra horizontalmente */
+
+.habilidad:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    background-color: #4c5dcc;
 }
 
 .habilidad img {
-    width: 100%; 
-    height: auto; 
+    width: 80%;
+    height: auto;
     border-radius: 8px;
-    margin-bottom: 10px;
     object-fit: contain;
 }
 
-
-/* Estilo para el texto debajo de cada imagen */
-.habilidad p {
-    font-size: 18px;
+.habilidad h1 {
+    font-size: 1.5rem;
     color: #333;
 }
 
 /* Sección Proyectos */
-
 #Proyectos {
-
-    height: 100vh;
+    min-height: 90vh;
     padding: 70px 20px;
-    background: linear-gradient(to right, #7c7575, #070707); /* Degradado de rojo a naranja */
-    padding: 50px 0; /* Espaciado superior e inferior */
-    font-family: 'Arial', sans-serif; /* Tipografía legible */
+    background: linear-gradient(to right, #7c7575, #070707);
 }
 
-/* Título de la sección */
 #Proyectos h1 {
-    padding: 70px 20px; /* Ajusta el padding superior para mover el texto hacia abajo */
-    font-size: 60px; 
-    color: #bdb7b7; 
-    transition: color 0.4s ease, transform 0.3s ease;
-    text-align: center; /* Centra el texto horizontalmente */
-    margin: 0 auto; 
-    max-width: 90%; /* Limita el ancho para evitar que se vea muy grande en pantallas grandes */
-}
-
-#Proyectos h1.main-title:hover {
-    color: #636363; 
-    transform: scale(1.1); 
-}
-
-
-/* Introducción (p) */
-.intro {
-    
+    font-size: 3rem;
+    color: #bdb7b7;
     text-align: center;
-    font-size: 20px;
-    color: #ffffff;
-    margin-top: -30px;
-    margin-bottom: 20px;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
-/* Contenedor de proyectos */
 .proyectos-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsivo */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
-/* Estilo para cada proyecto */
 .proyecto {
-    background-color: #fff; /* Fondo blanco */
-    border-radius: 10px; /* Bordes redondeados */
+    background-color: #fff;
+    border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animación suave */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     padding: 20px;
-    text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 
-/* Efecto de hover para proyectos */
 .proyecto:hover {
-    transform: translateY(-10px); /* Levantamiento */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Sombra más profunda */
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* Imágenes de los proyectos */
 .proyecto img {
     width: 100%;
     height: 200px;
@@ -362,23 +240,20 @@ hr {
     margin-bottom: 15px;
 }
 
-/* Título del proyecto */
 .proyecto h2 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     color: #333;
     margin-bottom: 15px;
 }
 
-/* Descripción del proyecto */
 .proyecto p {
     font-size: 1rem;
     color: #777;
     margin-bottom: 20px;
 }
 
-/* Estilo del botón para ver el proyecto */
 .btn-proyecto {
-    background: linear-gradient(to right, #7c7575, #070707); /* Degradado de rojo a naranja */ /* Color azul */
+    background: linear-gradient(to right, #7c7575, #070707);
     color: #fff;
     padding: 12px 20px;
     text-decoration: none;
@@ -388,24 +263,10 @@ hr {
 }
 
 .btn-proyecto:hover {
-    background-color: #0056b3; /* Azul más oscuro */
+    background-color: #0056b3;
 }
 
-/* Resaltar cada enlace de proyecto */
-.btn-proyecto:active {
-    transform: scale(0.98); /* Pequeño efecto de pulsación */
-}
-
-/* Responsivo: ajuste de diseño en pantallas más pequeñas */
-@media (max-width: 768px) {
-    .proyectos-container {
-        grid-template-columns: 1fr; /* Columna única en dispositivos móviles */
-    }
-}
-
-
-
-/* Sección Contacto */
+/* ----------------------------------------------------------------------------Sección Contacto */
 #Contacto {
     height: 10vh;
     padding: 200px 20px;
@@ -426,9 +287,4 @@ hr {
 
 #Contacto a:hover {
     text-decoration: underline;
-}
-@media (max-width: 600px) {
-    .PasaTiempo-container {
-        grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
-    }
 }
