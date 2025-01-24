@@ -13,7 +13,7 @@ body {
     box-sizing: border-box;
 }
 
-/* Estilo de la barra de navegación */
+/* Estilo de la barra de navegación -------------------------------------------------------------------------------------------------------------*/
 nav {
     background-color: #000000;
     color: #fff;
@@ -53,7 +53,7 @@ section {
     margin-top: 60px;
 }
 
-/* Sección Inicio */
+/* Sección Inicio------------------------------------------------------------------------------------------------------------- */
 #Inicio {
     background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(248, 248, 248, 0.8), rgba(224, 224, 224, 0.5));
     text-align: center;
@@ -86,7 +86,7 @@ section {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Sección ¿Quién Soy? */
+/* Sección ¿Quién Soy?------------------------------------------------------------------------------------------------------------- */
 #QuienSoy {
     background: linear-gradient(to right, #7c7575, #070707);
     text-align: center;
@@ -111,7 +111,7 @@ section {
     margin: 20px 0;
 }
 
-/* Sección PasaTiempo */
+/* Sección PasaTiempo -------------------------------------------------------------------------------------------------------------*/
 #PasaTiempo {
     min-height: 90vh;
     padding: 70px 20px;
@@ -150,7 +150,7 @@ section {
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Sección Habilidades */
+/* Sección Habilidades------------------------------------------------------------------------------------------------------------- */
 #Habilidades {
     min-height: 90vh;
     padding: 80px 20px;
@@ -194,7 +194,7 @@ section {
     color: #333;
 }
 
-/* Sección Proyectos */
+/* Sección Proyectos----------------------------------------------------------------------------------------------------------------- */
 #Proyectos {
     min-height: 90vh;
     padding: 70px 20px;
